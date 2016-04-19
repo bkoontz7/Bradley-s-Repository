@@ -20,6 +20,6 @@ public class Information {
     }
     @Override
     public String toString(){
-        return dim.getCountry() + " " + ":" + " " + this.getValue() + 
+        return dim.getCOUNTRY() + " " + ":" + " " + this.getValue() + "%";
     }
 }

@@ -6,10 +6,10 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="716.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="bradley.s.project.PolioGraphController">
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bradley.s.project.PolioGraphController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <BarChart layoutY="67.0">
+      <BarChart layoutX="14.0" layoutY="13.0" prefHeight="439.0" prefWidth="500.0">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>

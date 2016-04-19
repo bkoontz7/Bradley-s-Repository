@@ -1,6 +1,4 @@
 
-import java.util.Arrays;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -24,9 +22,9 @@ public class Immunizations {
     @Override
     public String toString(){
         String var = null;
-        for(int i=0; i < fact.length; i++){
-            System.out.println(fact[i].toString());
-            var += fact[i].getValue();
+        for (Information fact1 : fact) {
+            System.out.println(fact1.toString());
+            var += fact1.getValue();
         }
         return var;
     }
