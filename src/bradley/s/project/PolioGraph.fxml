@@ -9,7 +9,7 @@
 <AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bradley.s.project.PolioGraphController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <BarChart layoutX="14.0" layoutY="13.0" prefHeight="439.0" prefWidth="500.0">
+      <BarChart layoutX="14.0" layoutY="13.0" prefHeight="439.0" prefWidth="500.0" title="i">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>

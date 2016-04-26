@@ -1,6 +1,7 @@
 import java.net.*;
 import java.util.*;
 import com.google.gson.*;
+import javafx.scene.chart.XYChart;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,6 +13,7 @@ import com.google.gson.*;
  * @author csstudent
  */
 public class Controlller {
+    private static Object chart;
     public static void main(String[] args){
         String s = "http://apps.who.int/gho/athena/data/GHO/WHS4_544.json?profile=simple&filter=YEAR:1980";
         URL url = null;
@@ -37,8 +39,14 @@ public class Controlller {
         scan.close();
         
         Gson gson = new Gson();
-        Information ds = gson.fromJson(str, Information.class);
-        
-        System.out.println(ds);
+        Immunizations i = gson.fromJson(str, Immunizations.class);
+        System.out.println(i);  
+    
+        XYChart.Series<String, Number> failedSeries  = new XYChart.Series();
+        Information[] info = i.getFact();
+        for(Information singular : info){
+            failedSeries.getData(singular.getCOUNTRY(), singular.getValue());
+        }
+        chart.getValue().add(failedSeries);
     }
 }
